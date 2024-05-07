@@ -7,13 +7,21 @@ public class MyAgent : Agent
 {
     public Transform target;
     public float moveSpeed = 1f;
+    public Transform[] spawnPoints;
 
-
+    private int currentSpawnPointIndex;
     public override void OnEpisodeBegin()
     {
+        currentSpawnPointIndex = Random.Range(0, spawnPoints.Length);
         transform.position = new Vector3(14f, 3f, -13.5f);
+        ResetTarget();
     }
-
+    void ResetTarget()
+    {
+        // Kies willekeurig een nieuw spawnpoint voor het target
+        int newSpawnPointIndex = Random.Range(0, spawnPoints.Length);
+        target.position = spawnPoints[newSpawnPointIndex].position;
+    }
     public override void CollectObservations(VectorSensor sensor)
     {
         
@@ -43,6 +51,7 @@ public class MyAgent : Agent
             SetReward(1f);
             Debug.Log("Reward 1");
             EndEpisode();
+            ResetTarget();
         }
     }
 }
