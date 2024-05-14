@@ -12,9 +12,10 @@ public class MyAgent : Agent
     public float raycastDistance = 1f;
     public Transform[] spawnPoints;
 
+    private int index = 0;
+
     public float distanceCheck = 5f;
 
-    private int currentSpawnPointIndex;
     private Rigidbody rb;
     public override void Initialize()
     {
@@ -22,16 +23,14 @@ public class MyAgent : Agent
     }
     public override void OnEpisodeBegin()
     {
-        // currentSpawnPointIndex = Random.Range(0, spawnPoints.Length);
-        transform.position = new Vector3(14f, 3f, -13.5f);
+        if (index >= spawnPoints.Length) { index = 0; }
+       // transform.position = new Vector3(14f, 3f, -13.5f);
         
-        // ResetTarget();
+        ResetTarget();
     }
     void ResetTarget()
     {
-        // Kies willekeurig een nieuw spawnpoint voor het target
-        int newSpawnPointIndex = Random.Range(0, spawnPoints.Length);
-        target.position = spawnPoints[newSpawnPointIndex].position;
+        target.position = spawnPoints[index++].position;
     }
     public override void CollectObservations(VectorSensor sensor)
     {
@@ -53,16 +52,8 @@ public class MyAgent : Agent
         Vector3 rotation = new Vector3(0f, rotateY, 0f);
         Quaternion deltaRotation = Quaternion.Euler(rotation * turnSpeed * Time.fixedDeltaTime);
         rb.MoveRotation(rb.rotation * deltaRotation);
-
-        float distanceToTarget = Vector3.Distance(transform.position, target.transform.position);
-        if (distanceToTarget < distanceCheck)
-        {
-            Debug.Log("In de buurt");
-            SetReward(0.1f);
-        } else
-        {
-            SetReward(-0.05f);
-        }
+            SetReward(-0.005f);
+        
 
         
     }
@@ -79,14 +70,18 @@ public class MyAgent : Agent
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward, out hit, raycastDistance, obstacleLayer))
         {
-            // Als de raycast een obstakel raakt, pas dan de bewegingsrichting aan
-            Vector3 newDirection = Vector3.RotateTowards(transform.forward, Vector3.Reflect(transform.forward, hit.normal), Mathf.PI, 0f);
-            rb.velocity = newDirection * moveSpeed;
+
+            /*if (!hit.collider.CompareTag("Target"))
+            {
+                // Als de raycast een obstakel raakt, pas dan de bewegingsrichting aan
+                Vector3 newDirection = Vector3.RotateTowards(transform.forward, Vector3.Reflect(transform.forward, hit.normal), Mathf.PI, 0f);
+                rb.velocity = newDirection * moveSpeed;
+            }*/
         }
 
         // Reset rotation in the x and z axes
         Quaternion newRotation = Quaternion.Euler(0f, rb.rotation.eulerAngles.y, 0f);
-        rb.MoveRotation(newRotation);
+       rb.MoveRotation(newRotation);
     }
     private void OnTriggerEnter(Collider other)
     {

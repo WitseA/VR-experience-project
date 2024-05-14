@@ -2,22 +2,22 @@
     "MyAgent": {
         "checkpoints": [
             {
-                "steps": 3840,
-                "file_path": "results\\3deTraining\\MyAgent\\MyAgent-3840.onnx",
+                "steps": 3328,
+                "file_path": "results\\4detraining\\MyAgent\\MyAgent-3328.onnx",
                 "reward": null,
-                "creation_time": 1715093065.6316295,
+                "creation_time": 1715691378.4622853,
                 "auxillary_file_paths": [
-                    "results\\3deTraining\\MyAgent\\MyAgent-3840.pt"
+                    "results\\4detraining\\MyAgent\\MyAgent-3328.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 3840,
-            "file_path": "results\\3deTraining\\MyAgent.onnx",
+            "steps": 3328,
+            "file_path": "results\\4detraining\\MyAgent.onnx",
             "reward": null,
-            "creation_time": 1715093065.6316295,
+            "creation_time": 1715691378.4622853,
             "auxillary_file_paths": [
-                "results\\3deTraining\\MyAgent\\MyAgent-3840.pt"
+                "results\\4detraining\\MyAgent\\MyAgent-3328.pt"
             ]
         }
     },
