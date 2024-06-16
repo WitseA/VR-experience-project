@@ -4,7 +4,19 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/MenuScreens/Scenes/MainMenu.unity
+    guid: 46be6010788d98a40a283de1b1378a1e
+  - enabled: 1
+    path: Assets/MenuScreens/Scenes/GameInfoMenu.unity
+    guid: d4c391cd0e3d060429666fa906ae794d
+  - enabled: 1
+    path: Assets/MenuScreens/Scenes/GameOverScreen.unity
+    guid: f575f8dbd16a6c34492ca08d40db1d4d
+  - enabled: 1
+    path: Assets/MenuScreens/Scenes/YouWonScreen.unity
+    guid: 97832816f277a0148a6bdb4fd23c2c4d
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: de86d3826ba6a19428cd90933b67a8b4, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 8f286a025772bd643bbc213e51fce5d1, type: 2}
