@@ -34,7 +34,7 @@ public class ItemUIManager : MonoBehaviour
 
             icon.sprite = SpriteFromTexture(itemTextures[i]);
             nameText.text = itemNames[i];
-            checkmark.enabled = true;
+            checkmark.enabled = false;
 
             itemCheckmarks.Add(itemNames[i], checkmark);
 
@@ -57,6 +57,24 @@ public class ItemUIManager : MonoBehaviour
         else
         {
             Debug.LogWarning($"Item {itemName} not found in dictionary.");
+        }
+    }
+
+    public void RemoveItem(string itemTag)
+    {
+
+        GameObject[] items = GameObject.FindGameObjectsWithTag(itemTag);
+
+        if (items.Length > 0)
+        {
+            GameObject itemToRemove = items[0];
+            Destroy(itemToRemove);
+
+            UpdateItem(itemTag, true);
+        }
+        else
+        {
+            Debug.LogWarning($"No item with tag '{itemTag}' found to remove.");
         }
     }
 }
