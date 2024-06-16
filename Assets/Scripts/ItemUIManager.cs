@@ -26,7 +26,7 @@ public class ItemUIManager : MonoBehaviour
         {
             GameObject itemUI = Instantiate(itemUIPrefab, panel.transform);
 
-            itemUI.transform.localPosition += new Vector3(100f, -yOffset, 0f);
+            itemUI.transform.localPosition += new Vector3(75f, -yOffset, 0f);
 
             Image icon = itemUI.transform.Find("Icon").GetComponent<Image>();
             TextMeshProUGUI nameText = itemUI.transform.Find("Name").GetComponent<TextMeshProUGUI>();
@@ -34,11 +34,11 @@ public class ItemUIManager : MonoBehaviour
 
             icon.sprite = SpriteFromTexture(itemTextures[i]);
             nameText.text = itemNames[i];
-            checkmark.enabled = false;
+            checkmark.enabled = true;
 
             itemCheckmarks.Add(itemNames[i], checkmark);
 
-            yOffset += 300f;
+            yOffset += 100f;
         }
     }
 
