@@ -470,6 +470,7 @@ GameObject:
   m_Component:
   - component: {fileID: 110619265}
   - component: {fileID: 110619266}
+  - component: {fileID: 110619267}
   m_Layer: 0
   m_Name: Left Arm IK
   m_TagString: Untagged
@@ -518,6 +519,27 @@ MonoBehaviour:
     m_HintWeight: 1
     m_MaintainTargetPositionOffset: 0
     m_MaintainTargetRotationOffset: 0
+--- !u!65 &110619267
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110619264}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.7597429, y: 0.13851336, z: 0.16523667}
+  m_Center: {x: -0.49787986, y: 1.4307486, z: -0.06603943}
 --- !u!1001 &140517640
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2237,6 +2259,7 @@ GameObject:
   m_Component:
   - component: {fileID: 409513492}
   - component: {fileID: 409513493}
+  - component: {fileID: 409513494}
   m_Layer: 0
   m_Name: Right Arm IK
   m_TagString: Untagged
@@ -2285,6 +2308,27 @@ MonoBehaviour:
     m_HintWeight: 1
     m_MaintainTargetPositionOffset: 0
     m_MaintainTargetRotationOffset: 0
+--- !u!65 &409513494
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409513491}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.8873246, y: 0.20480222, z: 0.2221278}
+  m_Center: {x: 0.43736935, y: 1.3976048, z: -0.061050866}
 --- !u!1001 &448817745
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6626,6 +6670,27 @@ MonoBehaviour:
         m_Flags: 0
       m_Reference: {fileID: 6558622148059887818, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   animator: {fileID: 1195899014}
+--- !u!65 &1195899018
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195899011}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.4309344, y: 1.909383, z: 1}
+  m_Center: {x: -0.013846404, y: 0.90048397, z: 0}
 --- !u!1001 &1203686389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8390,6 +8455,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 91a52d02ec0a6504abc6edb86fbac5a6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1195899017}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 91a52d02ec0a6504abc6edb86fbac5a6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1195899018}
   m_SourcePrefab: {fileID: 100100000, guid: 91a52d02ec0a6504abc6edb86fbac5a6, type: 3}
 --- !u!1 &1585901002
 GameObject:
@@ -8788,6 +8856,7 @@ GameObject:
   - component: {fileID: 1743455151}
   - component: {fileID: 1743455150}
   - component: {fileID: 1743455149}
+  - component: {fileID: 1743455152}
   m_Layer: 0
   m_Name: XR Origin (XR Rig)
   m_TagString: Untagged
@@ -8841,6 +8910,27 @@ Transform:
   - {fileID: 341456497}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1743455152
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743455148}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.8425484, y: 1.3048558, z: 0.58955765}
+  m_Center: {x: -0.038414, y: 0.7015085, z: -0.20522118}
 --- !u!1001 &1752404128
 PrefabInstance:
   m_ObjectHideFlags: 0
