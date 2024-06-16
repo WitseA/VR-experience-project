@@ -7363,7 +7363,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1259367997277306, guid: 140d308f14d8b9541bc37080c8a2213f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1759703824}
+    - targetCorrespondingSourceObject: {fileID: 1259367997277306, guid: 140d308f14d8b9541bc37080c8a2213f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1759703823}
   m_SourcePrefab: {fileID: 100100000, guid: 140d308f14d8b9541bc37080c8a2213f, type: 3}
 --- !u!4 &1299252281 stripped
 Transform:
@@ -8593,6 +8599,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VR Character IK
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 91a52d02ec0a6504abc6edb86fbac5a6, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 91a52d02ec0a6504abc6edb86fbac5a6, type: 3}
       propertyPath: m_Controller
       value: 
@@ -9129,6 +9139,46 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4413510086684120, guid: 0b7451c289c0d9547a21ba7eb3340776, type: 3}
   m_PrefabInstance: {fileID: 1752404128}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1759703822 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1259367997277306, guid: 140d308f14d8b9541bc37080c8a2213f, type: 3}
+  m_PrefabInstance: {fileID: 1299252280}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1759703823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759703822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098b574faccbf944e9fc348db9dfc6f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetSceneName: YouWonScreen
+  playerTag: Player
+--- !u!65 &1759703824
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759703822}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.4986942, y: 3.848363, z: 1.1506187}
+  m_Center: {x: 0.084272005, y: 1.8988653, z: 0.07530917}
 --- !u!1 &1767050604
 GameObject:
   m_ObjectHideFlags: 0
@@ -9775,15 +9825,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d6f2c9324b03e8b4d93c47c464c73709, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.104
+      value: -1.48
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d6f2c9324b03e8b4d93c47c464c73709, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.69299996
+      value: -0.69
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d6f2c9324b03e8b4d93c47c464c73709, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.0929999
+      value: -1.7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d6f2c9324b03e8b4d93c47c464c73709, type: 3}
       propertyPath: m_LocalRotation.w

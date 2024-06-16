@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MenuScreens/Scenes/YouWonScreen.unity
     guid: 97832816f277a0148a6bdb4fd23c2c4d
+  - enabled: 1
+    path: Assets/TextMesh Pro/Documentation/Rooms.unity
+    guid: 67429431bdd8e3249b33c75289298d32
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: de86d3826ba6a19428cd90933b67a8b4, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 8f286a025772bd643bbc213e51fce5d1, type: 2}
