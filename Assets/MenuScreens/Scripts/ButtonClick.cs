@@ -10,7 +10,7 @@ public class ButtonClick : MonoBehaviour
     public void OnPlayButtonClicked()
     {
         // load the game scene
-        SceneManager.LoadScene("YouWonScreen");
+        SceneManager.LoadScene("Rooms");
     }
 
     public void OnGameInfoButtonClicked()
