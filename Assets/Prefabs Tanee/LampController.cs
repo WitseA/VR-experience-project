@@ -18,10 +18,18 @@ public class LampController : MonoBehaviour
 
     public void ToggleLight()
     {
+        Debug.Log("ToggleLight method called.");
+
         if (lampLight != null)
         {
             isOn = !isOn;
             lampLight.enabled = isOn;
+
+            Debug.Log("Light is now " + (isOn ? "on" : "off"));
+        }
+        else
+        {
+            Debug.LogError("LampLight is null!");
         }
     }
 }
