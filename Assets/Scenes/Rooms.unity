@@ -8109,6 +8109,62 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4281571602589966, guid: 2f603782a54272140bd490519349fd88, type: 3}
   m_PrefabInstance: {fileID: 1598974623}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1611770696
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1611770698}
+  - component: {fileID: 1611770697}
+  m_Layer: 0
+  m_Name: ItemUIManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1611770697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611770696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca1ed1c63db125f40b03593dcf607f59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 530353353}
+  itemUIPrefab: {fileID: 1394756271429983838, guid: b805f3f4cc849f54399a8a50946e2804, type: 3}
+  itemTextures:
+  - {fileID: 2800000, guid: 027359a0bc0f2d84f8de4c27e8e34126, type: 3}
+  - {fileID: 2800000, guid: de7061e9cf1da904e9d35bf1561319e6, type: 3}
+  - {fileID: 2800000, guid: 37c3107be1f26ea44a003d4a7d03f29c, type: 3}
+  - {fileID: 2800000, guid: 4349d4becc3639b4b9a405a81c6a6630, type: 3}
+  itemNames:
+  - Key
+  - Books
+  - Shoe
+  - Aidkit
+--- !u!4 &1611770698
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611770696}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 205.79536, y: -44.879257, z: 2719.8528}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1635836500
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9286,7 +9342,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -10361,3 +10417,4 @@ SceneRoots:
   - {fileID: 573864968}
   - {fileID: 1039332448}
   - {fileID: 1919498238}
+  - {fileID: 1611770698}
