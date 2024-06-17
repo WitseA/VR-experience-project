@@ -1,0 +1,29 @@
+{
+    "MyAgent": {
+        "checkpoints": [
+            {
+                "steps": 100036,
+                "file_path": "results\\woutTraining40\\MyAgent\\MyAgent-100036.onnx",
+                "reward": null,
+                "creation_time": 1718544983.0219307,
+                "auxillary_file_paths": [
+                    "results\\woutTraining40\\MyAgent\\MyAgent-100036.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 100036,
+            "file_path": "results\\woutTraining40\\MyAgent.onnx",
+            "reward": null,
+            "creation_time": 1718544983.0219307,
+            "auxillary_file_paths": [
+                "results\\woutTraining40\\MyAgent\\MyAgent-100036.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
