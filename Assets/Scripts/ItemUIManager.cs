@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class ItemUIManager : MonoBehaviour
 {
@@ -55,6 +56,18 @@ public class ItemUIManager : MonoBehaviour
         {
             Debug.LogWarning($"Item {itemName} not found in dictionary.");
         }
+    }
+
+    public void AreAllItemsEnabled()
+    {
+        foreach (var kvp in itemCheckmarks)
+        {
+            if (!kvp.Value.enabled)
+            {
+                return;
+            }
+        }
+        SceneManager.LoadScene("YouWonScreen");
     }
 
     public void RemoveItem(string itemTag)
