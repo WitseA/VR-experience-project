@@ -18,8 +18,6 @@ public class ItemUIManager : MonoBehaviour
 
     void InitializeUI()
     {
-        Debug.Log("Initializing UI...");
-
         float yOffset = 0f;
 
         for (int i = 0; i < itemNames.Count; i++)
@@ -34,7 +32,7 @@ public class ItemUIManager : MonoBehaviour
 
             icon.sprite = SpriteFromTexture(itemTextures[i]);
             nameText.text = itemNames[i];
-            checkmark.enabled = true;
+            checkmark.enabled = false;
 
             itemCheckmarks.Add(itemNames[i], checkmark);
 
@@ -52,7 +50,6 @@ public class ItemUIManager : MonoBehaviour
         if (itemCheckmarks.ContainsKey(itemName))
         {
             itemCheckmarks[itemName].enabled = collected;
-            Debug.Log($"Item {itemName} updated. Collected: {collected}");
         }
         else
         {
@@ -62,15 +59,12 @@ public class ItemUIManager : MonoBehaviour
 
     public void RemoveItem(string itemTag)
     {
-
         GameObject[] items = GameObject.FindGameObjectsWithTag(itemTag);
-
         if (items.Length > 0)
         {
             GameObject itemToRemove = items[0];
-            Destroy(itemToRemove);
-
             UpdateItem(itemTag, true);
+            Destroy(itemToRemove);
         }
         else
         {
