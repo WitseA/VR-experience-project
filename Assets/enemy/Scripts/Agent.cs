@@ -24,7 +24,9 @@ public class MyAgent : Agent
     }
     public override void OnEpisodeBegin()
     {
-      if(transform != null) { transform.position = new Vector3(-12.376f, -1.261f, -0.931f); }
+      if(transform != null) { transform.position = new Vector3(-12.27078f, -1.261f, -0.1391832f);
+            transform.rotation = new Quaternion(0f, 90f, 0f,0f);
+        }
        
         
        
