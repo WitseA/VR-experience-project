@@ -2,22 +2,22 @@
     "MyAgent": {
         "checkpoints": [
             {
-                "steps": 30857,
-                "file_path": "results\\43\\MyAgent\\MyAgent-30857.onnx",
-                "reward": -3.2799995243549347,
-                "creation_time": 1718644609.2165742,
+                "steps": 604,
+                "file_path": "results\\43\\MyAgent\\MyAgent-604.onnx",
+                "reward": -2.014999657869339,
+                "creation_time": 1718648429.744011,
                 "auxillary_file_paths": [
-                    "results\\43\\MyAgent\\MyAgent-30857.pt"
+                    "results\\43\\MyAgent\\MyAgent-604.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 30857,
+            "steps": 604,
             "file_path": "results\\43\\MyAgent.onnx",
-            "reward": -3.2799995243549347,
-            "creation_time": 1718644609.2165742,
+            "reward": -2.014999657869339,
+            "creation_time": 1718648429.744011,
             "auxillary_file_paths": [
-                "results\\43\\MyAgent\\MyAgent-30857.pt"
+                "results\\43\\MyAgent\\MyAgent-604.pt"
             ]
         }
     },

@@ -33,7 +33,8 @@ public class MyAgent : Agent
     public override void CollectObservations(VectorSensor sensor)
     {
         if (transform != null) { sensor.AddObservation(transform.position); }
-        sensor.AddObservation(target.position);
+        if( target != null){ sensor.AddObservation(target.position); }
+        
             
     }
 
