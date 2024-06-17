@@ -24,7 +24,7 @@ public class MyAgent : Agent
     }
     public override void OnEpisodeBegin()
     {
-      if(transform != null) { transform.position = new Vector3(-14.965f, -1.382f, -1.59f); }
+      if(transform != null) { transform.position = new Vector3(-12.376f, -1.261f, -0.931f); }
        
         
        
@@ -82,7 +82,7 @@ public class MyAgent : Agent
         if (other.tag.Equals("Player")) {
             SetReward(1f);
             Debug.Log("Reward 1");
-            EndEpisode();
+           // EndEpisode();
             SceneManager.LoadScene("GameOverScreen");
         }
     }

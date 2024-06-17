@@ -1154,7 +1154,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c57deba42d2ab084d82fb3d92fdb965b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.840523
+      value: 2.524
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c57deba42d2ab084d82fb3d92fdb965b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1162,23 +1162,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c57deba42d2ab084d82fb3d92fdb965b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.5376004
+      value: -2.865
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c57deba42d2ab084d82fb3d92fdb965b, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.94437355
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c57deba42d2ab084d82fb3d92fdb965b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c57deba42d2ab084d82fb3d92fdb965b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.32887495
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c57deba42d2ab084d82fb3d92fdb965b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c57deba42d2ab084d82fb3d92fdb965b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1186,7 +1186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c57deba42d2ab084d82fb3d92fdb965b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 38.401
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c57deba42d2ab084d82fb3d92fdb965b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -1263,9 +1263,9 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 10000
+  MaxStep: 0
   target: {fileID: 1195899015}
-  moveSpeed: 0.5
+  moveSpeed: 3
   turnSpeed: 10
   obstacleLayer:
     serializedVersion: 2
@@ -1348,8 +1348,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1.7445565, z: 0.66673034}
-  m_Center: {x: 0, y: 0.8391797, z: 0.16663489}
+  m_Size: {x: 0.7895051, y: 1.7445565, z: 0.66673034}
+  m_Center: {x: -0.024201566, y: 0.8391797, z: 0.16663487}
 --- !u!114 &235417590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1364,9 +1364,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SensorName: RayPerceptionSensor
   m_DetectableTags: []
-  m_RaysPerDirection: 25
-  m_MaxRayDegrees: 180
-  m_SphereCastRadius: 0.5
+  m_RaysPerDirection: 2
+  m_MaxRayDegrees: 11.9
+  m_SphereCastRadius: 0.28
   m_RayLength: 20
   m_RayLayerMask:
     serializedVersion: 2
@@ -1374,8 +1374,8 @@ MonoBehaviour:
   m_ObservationStacks: 1
   rayHitColor: {r: 1, g: 0, b: 0, a: 1}
   rayMissColor: {r: 1, g: 1, b: 1, a: 1}
-  m_StartVerticalOffset: 0
-  m_EndVerticalOffset: 0
+  m_StartVerticalOffset: 0.88
+  m_EndVerticalOffset: 2.39
 --- !u!114 &235417591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2102,7 +2102,7 @@ MonoBehaviour:
     m_Bits: 1
   body: {fileID: 1195899015}
   otherFoot: {fileID: 1505299476}
-  speed: 4
+  speed: 0.5
   stepDistance: 0.2
   stepLength: 0.2
   sideStepLength: 0.1
@@ -7016,7 +7016,47 @@ MonoBehaviour:
   m_RigLayers:
   - m_Rig: {fileID: 1148308070}
     m_Active: 1
-  m_Effectors: []
+  m_Effectors:
+  - m_Transform: {fileID: 1324649314}
+    m_Style:
+      shape: {fileID: 4300000, guid: c6793350c150f456688e39a81f97364a, type: 2}
+      color: {r: 1, g: 0, b: 0, a: 0.5}
+      size: 0.1
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0}
+    m_Visible: 1
+  - m_Transform: {fileID: 1949176286}
+    m_Style:
+      shape: {fileID: 4300000, guid: c6793350c150f456688e39a81f97364a, type: 2}
+      color: {r: 1, g: 0, b: 0, a: 0.5}
+      size: 0.1
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0}
+    m_Visible: 1
+  - m_Transform: {fileID: 941244136}
+    m_Style:
+      shape: {fileID: 4300000, guid: c6793350c150f456688e39a81f97364a, type: 2}
+      color: {r: 1, g: 0, b: 0, a: 0.5}
+      size: 0.1
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0}
+    m_Visible: 1
+  - m_Transform: {fileID: 1605689053}
+    m_Style:
+      shape: {fileID: 4300000, guid: c6793350c150f456688e39a81f97364a, type: 2}
+      color: {r: 1, g: 0, b: 0, a: 0.5}
+      size: 0.1
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0}
+    m_Visible: 1
+  - m_Transform: {fileID: 591135646}
+    m_Style:
+      shape: {fileID: 4300000, guid: c6793350c150f456688e39a81f97364a, type: 2}
+      color: {r: 1, g: 0, b: 0, a: 0.5}
+      size: 0.1
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0}
+    m_Visible: 1
 --- !u!114 &1195899013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8930,7 +8970,7 @@ MonoBehaviour:
     m_Bits: 1
   body: {fileID: 1195899015}
   otherFoot: {fileID: 342853244}
-  speed: 4
+  speed: 0.5
   stepDistance: 0.2
   stepLength: 0.2
   sideStepLength: 0.1
